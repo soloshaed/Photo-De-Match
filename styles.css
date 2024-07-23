@@ -1,0 +1,78 @@
+/* Définition des couleurs vives */
+:root {
+    --primary-color: #ff6f61; /* Rouge orangé vif */
+    --secondary-color: #4caf50; /* Vert vif */
+    --accent-color: #ffeb3b; /* Jaune vif */
+    --background-color: #ffffff; /* Blanc */
+    --text-color: #333333; /* Gris foncé */
+}
+
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Galerie de photos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-card p {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
